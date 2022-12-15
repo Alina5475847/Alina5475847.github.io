@@ -1,0 +1,233 @@
+.footer {
+}
+.footer__container {
+}
+.footer__main {
+    background: #2C2529;
+    padding-top: 6rem;
+    padding-bottom: 7.6rem;
+
+    @media (max-width: 954px) {
+        padding-bottom: 0;
+    }
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 954px) {
+        flex-wrap: wrap;
+    }
+}
+.footer__item {
+    flex: 0 1 20%;
+
+    @media (max-width: 954px) {
+        flex: 1 1 100%;
+        padding: 2.2rem 0;
+        border-bottom: 1px solid #A3A3A3;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        flex-wrap: wrap;
+
+        &:first-child {
+            border-top: 1px solid #A3A3A3;
+        }
+    }
+
+    &.accCl {
+        .footer__title {
+            &:after {
+                transform: rotate(-45deg);
+            }
+
+            &:before {
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+.footer__item-arrow {
+    display: none;
+
+    @media (max-width: 954px) {
+        display: block;
+        padding-right: 1.4rem;
+    }
+}
+.footer__title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: calc(24 / 18);
+    color: #F7F7F9;
+
+    margin-bottom: 0.8rem;
+
+    position: relative;
+    width: 100%;
+
+    &--last {
+        display: none;
+
+        @media (max-width: 954px) {
+            display: block;
+        }
+    }
+
+    @media (max-width: 954px) {
+        margin-bottom: 0;
+    }
+
+    &:after, 
+    &:before {
+        content: "";
+        width: 1.2rem;
+        height: 0.2rem;
+        background-color: #A3A3A3;
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all .2s linear;
+
+        display: none;
+
+        @media (max-width: 954px) {
+            display: block;
+        }
+    }
+
+    &:after {
+        right: 2.15rem;
+        transform: rotate(45deg);
+    }
+
+    &:before {
+        right: 1.4rem;
+        transform: rotate(-45deg);
+    }
+}
+.footer__item-block {
+    @media (max-width: 954px) {
+        width: 100%;
+        margin-top: 2.2rem;
+    }
+}
+.footer__list {
+    li {
+        margin-bottom: 0.8rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 954px) {
+            margin-bottom: 1.8rem;
+        }
+    }
+
+    @media (max-width: 954px) {
+        width: 100%;
+        margin-top: 2.2rem;
+    }
+}
+.dn{
+    @media (max-width: 954px) {
+        display: none
+    }
+}
+.footer__link {
+    font-size: 1.8rem;
+    line-height: calc(24 / 18);
+    color: #A3A3A3;
+    transition: all .2s linear;
+
+    &:hover {
+        color: #fff;
+    }
+}
+.footer__copy {
+    background: #262123;
+    padding: 2.8rem 0;
+}
+.footer__copy-text {
+    font-size: 1.4rem;
+    line-height: calc(24 / 14);
+    text-align: center;
+    color: #A3A3A3;
+
+    @media (max-width: 954px) {
+        width: 15rem;
+        margin: auto;
+        overflow: hidden;
+        height: 2.4rem;
+    }
+}
+.footer__tel {
+    display: block;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: calc(24 / 18);
+    color: #F7F7F9;
+
+    margin-bottom: 0.8rem;
+
+    @media (max-width: 954px) {
+        color: #A3A3A3;
+        font-weight: 400;
+    }
+}
+.footer__mail {
+    display: block;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: calc(24 / 18);
+    color: #F7F7F9;
+
+    margin-bottom: 0.8rem;
+
+    @media (max-width: 954px) {
+        color: #A3A3A3;
+    }
+}
+.footer__socials {
+    display: flex;
+
+    @media (max-width: 954px) {
+        margin-top: 1.8rem;
+    }
+}
+.footer__social {
+    margin-right: 0.4rem;
+    cursor: pointer;
+
+    &:last-child {
+        margin-right: 0;
+    }
+    svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        fill: #CECECE;
+        transition: all .2s linear;
+    }
+
+    &:hover {
+        svg {
+            fill: #38BE76;
+        }
+    }
+}
+.footer__address {
+    font-size: 1.8rem;
+    line-height: 178%;
+    color: #A3A3A3;
+
+    margin-top: 3.6rem;
+
+    @media (max-width: 954px) {
+        margin-top: 1.8rem;
+    }
+}
