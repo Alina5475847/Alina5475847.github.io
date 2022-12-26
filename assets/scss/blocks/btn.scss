@@ -1,0 +1,28 @@
+.btn {
+    border-radius: .6rem;
+    min-height: 3.8rem;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    white-space: nowrap;
+
+    &--red {
+        background: #DF3B57;
+
+        &:hover {
+            background: darken(#DF3B57, 5%);
+        }
+    }
+
+    &--green {
+        background: #0F7173;
+
+        &:hover {
+            background: darken(#0F7173, 5%);
+        }
+    }
+}
