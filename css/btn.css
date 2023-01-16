@@ -1,0 +1,14 @@
+.btn--blue {
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #FFFFFF;
+  -webkit-backdrop-filter: blur(22.5px);
+          backdrop-filter: blur(22.5px);
+  background-color: #447EF7;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  -webkit-clip-path: polygon(0% 16%, 2.5% 16%, 2.55% 8%, 5% 8%, 5% 0%, 95% 0%, 95% 8%, 97.5% 8%, 97.5% 16%, 100% 16%, 100% 84%, 97.5% 84%, 97.5% 92%, 95% 92%, 95% 100%, 5% 100%, 5% 92%, 2.5% 92%, 2.5% 84%, 0% 84%);
+          clip-path: polygon(0% 16%, 2.5% 16%, 2.55% 8%, 5% 8%, 5% 0%, 95% 0%, 95% 8%, 97.5% 8%, 97.5% 16%, 100% 16%, 100% 84%, 97.5% 84%, 97.5% 92%, 95% 92%, 95% 100%, 5% 100%, 5% 92%, 2.5% 92%, 2.5% 84%, 0% 84%);
+}

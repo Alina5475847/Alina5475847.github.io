@@ -1,0 +1,299 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  color: #000;
+  line-height: 1;
+  font-size: 0.875rem;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.lock body {
+  overflow: hidden;
+  touch-action: none;
+}
+
+.wrapper > main {
+  flex: 1 1 auto;
+}
+
+.wrapper > * {
+  min-width: 0;
+}
+
+/*
+(i) Стили будут применяться ко 
+всем классам содержащим *__container
+Например header__container, main__container и т.д.
+Снипет (HTML): cnt
+*/
+[class*=__container] {
+  max-width: 73.125rem;
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+
+[class*=-ibg] {
+  position: relative;
+}
+
+[class*=-ibg] img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+[class*=-ibg_contain] img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.block__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+@media (max-width: 1500px) {
+  .block__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+.block__body {
+  position: relative;
+  max-width: 785px;
+  height: 445px;
+  margin-inline: auto;
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(22.5px);
+          backdrop-filter: blur(22.5px);
+  margin-top: 50px;
+  -webkit-clip-path: polygon(0% 3.3%, 0.6% 3.3%, 0.6% 2.24%, 1.27% 2.24%, 1.27% 1.12%, 1.91% 1.12%, 1.91% 0%, 98% 0%, 98% 1.12%, 98.73% 1.12%, 98.73% 2.24%, 99.4% 2.24%, 99.4% 3.3%, 100% 3.3%, 100% 96.7%, 99.4% 96.7%, 99.4% 97.76%, 98.73% 97.76%, 98.73% 98.88%, 98% 98.88%, 98% 100%, 1.91% 100%, 1.91% 98.88%, 1.27% 98.88%, 1.27% 97.76%, 0.6% 97.76%, 0.6% 96.7%, 0% 96.7%);
+          clip-path: polygon(0% 3.3%, 0.6% 3.3%, 0.6% 2.24%, 1.27% 2.24%, 1.27% 1.12%, 1.91% 1.12%, 1.91% 0%, 98% 0%, 98% 1.12%, 98.73% 1.12%, 98.73% 2.24%, 99.4% 2.24%, 99.4% 3.3%, 100% 3.3%, 100% 96.7%, 99.4% 96.7%, 99.4% 97.76%, 98.73% 97.76%, 98.73% 98.88%, 98% 98.88%, 98% 100%, 1.91% 100%, 1.91% 98.88%, 1.27% 98.88%, 1.27% 97.76%, 0.6% 97.76%, 0.6% 96.7%, 0% 96.7%);
+}
+
+.block__inner {
+  padding: 16px;
+}
+
+.block__content {
+  margin-top: 20px;
+}
+
+.header-block__body {
+  display: grid;
+  grid-template-columns: 1fr 7fr 2fr;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.15);
+}
+
+.header-block__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #447ef7;
+  justify-self: center;
+  -webkit-clip-path: polygon(0% 24%, 6% 24%, 6% 18%, 12% 18%, 12% 12%, 18% 12%, 18% 6%, 24% 6%, 24% 0%, 76% 0%, 76% 6%, 82% 6%, 82% 12%, 88% 12%, 88% 18%, 94% 18%, 94% 24%, 100% 24%, 100% 76%, 94% 76%, 94% 82%, 88% 82%, 88% 88%, 82% 88%, 82% 94%, 76% 94%, 76% 100%, 24% 100%, 24% 94%, 18% 94%, 18% 88%, 12% 88%, 12% 82%, 6% 82%, 6% 76%, 0% 76%);
+          clip-path: polygon(0% 24%, 6% 24%, 6% 18%, 12% 18%, 12% 12%, 18% 12%, 18% 6%, 24% 6%, 24% 0%, 76% 0%, 76% 6%, 82% 6%, 82% 12%, 88% 12%, 88% 18%, 94% 18%, 94% 24%, 100% 24%, 100% 76%, 94% 76%, 94% 82%, 88% 82%, 88% 88%, 82% 88%, 82% 94%, 76% 94%, 76% 100%, 24% 100%, 24% 94%, 18% 94%, 18% 88%, 12% 88%, 12% 82%, 6% 82%, 6% 76%, 0% 76%);
+}
+
+.header-block__text-box p {
+  font-family: "Edit Undo BRK";
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.header-block__button {
+  font-family: "Space Mono", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 44px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(22.5px);
+          backdrop-filter: blur(22.5px);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  -webkit-clip-path: polygon(0% 16%, 2.5% 16%, 2.55% 8%, 5% 8%, 5% 0%, 95% 0%, 95% 8%, 97.5% 8%, 97.5% 16%, 100% 16%, 100% 84%, 97.5% 84%, 97.5% 92%, 95% 92%, 95% 100%, 5% 100%, 5% 92%, 2.5% 92%, 2.5% 84%, 0% 84%);
+          clip-path: polygon(0% 16%, 2.5% 16%, 2.55% 8%, 5% 8%, 5% 0%, 95% 0%, 95% 8%, 97.5% 8%, 97.5% 16%, 100% 16%, 100% 84%, 97.5% 84%, 97.5% 92%, 95% 92%, 95% 100%, 5% 100%, 5% 92%, 2.5% 92%, 2.5% 84%, 0% 84%);
+}
+
+@media (any-hover: hover) {
+  .header-block__button:hover {
+    background-color: #447ef7;
+  }
+}
+.header-block__button p {
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.content-block__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+
+.item-content {
+  min-height: 325px;
+  background: rgba(30, 34, 52, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(27.5px);
+          backdrop-filter: blur(27.5px);
+  -webkit-clip-path: polygon(0% 9%, 3.3% 9%, 3.3% 6%, 6.6% 6%, 6.6% 3%, 9.9% 3%, 9.9% 0%, 91.1% 0%, 91.1% 3%, 93.4% 3%, 93.4% 6%, 96.7% 6%, 96.7% 9%, 100% 9%, 100% 91%, 96.7% 91%, 96.7% 94%, 93.4% 94%, 93.4% 97%, 91.1% 97%, 91.1% 100%, 9.9% 100%, 9.9% 97%, 6.6% 97%, 6.6% 94%, 3.3% 94%, 3.3% 91%, 0% 91%);
+          clip-path: polygon(0% 9%, 3.3% 9%, 3.3% 6%, 6.6% 6%, 6.6% 3%, 9.9% 3%, 9.9% 0%, 91.1% 0%, 91.1% 3%, 93.4% 3%, 93.4% 6%, 96.7% 6%, 96.7% 9%, 100% 9%, 100% 91%, 96.7% 91%, 96.7% 94%, 93.4% 94%, 93.4% 97%, 91.1% 97%, 91.1% 100%, 9.9% 100%, 9.9% 97%, 6.6% 97%, 6.6% 94%, 3.3% 94%, 3.3% 91%, 0% 91%);
+}
+
+.item-content__image {
+  position: relative;
+  min-height: 240px;
+  -webkit-clip-path: polygon(0% 9%, 3.3% 9%, 3.3% 6%, 6.6% 6%, 6.6% 3%, 9.9% 3%, 9.9% 0%, 91.1% 0%, 91.1% 3%, 93.4% 3%, 93.4% 6%, 96.7% 6%, 96.7% 9%, 100% 9%, 100% 91%, 96.7% 91%, 96.7% 94%, 93.4% 94%, 93.4% 97%, 91.1% 97%, 91.1% 100%, 9.9% 100%, 9.9% 97%, 6.6% 97%, 6.6% 94%, 3.3% 94%, 3.3% 91%, 0% 91%);
+          clip-path: polygon(0% 9%, 3.3% 9%, 3.3% 6%, 6.6% 6%, 6.6% 3%, 9.9% 3%, 9.9% 0%, 91.1% 0%, 91.1% 3%, 93.4% 3%, 93.4% 6%, 96.7% 6%, 96.7% 9%, 100% 9%, 100% 91%, 96.7% 91%, 96.7% 94%, 93.4% 94%, 93.4% 97%, 91.1% 97%, 91.1% 100%, 9.9% 100%, 9.9% 97%, 6.6% 97%, 6.6% 94%, 3.3% 94%, 3.3% 91%, 0% 91%);
+}
+
+.item-content__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.item-content__box-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+  min-height: 240px;
+}
+
+.item-content__box-img p {
+  font-family: "Edit Undo";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.item-content__info {
+  margin-top: 17px;
+  margin-inline: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-content__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-content__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Edit Undo BRK";
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.item-content__sub-title {
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  opacity: 0.45;
+}
+
+.item-content__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-clip-path: polygon(0% 20%, 10% 20%, 10% 10%, 20% 10%, 20% 0%, 80% 0%, 80% 10%, 90% 10%, 90% 20%, 100% 20%, 100% 80%, 90% 80%, 90% 90%, 80% 90%, 80% 100%, 20% 100%, 20% 90%, 10% 90%, 10% 80%, 0% 80%);
+          clip-path: polygon(0% 20%, 10% 20%, 10% 10%, 20% 10%, 20% 0%, 80% 0%, 80% 10%, 90% 10%, 90% 20%, 100% 20%, 100% 80%, 90% 80%, 90% 90%, 80% 90%, 80% 100%, 20% 100%, 20% 90%, 10% 90%, 10% 80%, 0% 80%);
+}
