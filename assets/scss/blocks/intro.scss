@@ -1,0 +1,128 @@
+.intro {
+    max-width: 120rem;
+    margin: 6rem auto 0;
+}
+.intro__container {
+    max-width: 109.2rem;
+    margin-right: auto;
+    padding: 0 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 769px) {
+        flex-direction: column-reverse;
+    }
+}
+.intro__photo {
+    width: 100%;
+    max-width: 28.1rem;
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 992px) {
+        max-width: 20rem;
+    }
+
+    @media (max-width: 769px) {
+        margin: auto;
+    }
+}
+.intro__content {
+    width: 100%;
+    max-width: 76.1rem;
+
+    background: #F1F7FF;
+    border-radius: 2.4rem;
+    padding: 3rem 3.8rem 4rem;
+
+    @media (max-width: 769px) {
+        max-width: 100%;
+    }
+}
+.intro__title {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: calc(54 / 32);
+    color: #D2093C;
+
+    margin-bottom: 2rem;
+
+    @media (max-width: 490px) {
+        font-size: 2.5rem;
+    }
+}
+.intro__body {
+}
+.intro__row {
+    display: flex;
+    margin-bottom: 3rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 490px) {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+}
+.intro__col {
+    margin-right: 2rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media (max-width: 490px) {
+        margin-bottom: 1rem;
+    }
+}
+.intro__suptitle {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: calc(16 / 14);
+    color: #0F1216;
+    opacity: 0.6;
+
+    margin-bottom: 0.8rem;
+}
+.intro__block {
+    display: flex;
+    align-items: center;
+}
+.intro__icon {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+.intro__link {
+    font-size: 1.6rem;
+    line-height: calc(19 / 16);
+    color: #3973BF;
+
+    @media (max-width: 550px) {
+        font-size: 1.4rem;
+    }
+}
+.intro__text {
+    font-size: 1.4rem;
+    line-height: calc(16 / 14);
+    color: #0F1216;
+
+    @media (max-width: 550px) {
+        font-size: 1.2rem;
+    }
+}
+.intro__contact {
+    align-self: flex-end;
+    margin-bottom: .5rem;
+
+    @media (max-width: 490px) {
+        align-self: flex-start;
+        margin-bottom: 1rem;
+    }
+}
