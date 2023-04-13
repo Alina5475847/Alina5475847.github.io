@@ -1,0 +1,46 @@
+.subnav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+
+    padding: 2.1rem 4rem;
+    min-height: 25rem;
+    background-color: $white;
+    box-shadow: 0 36px 35px rgb(0 0 0 / 8%);
+
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+
+    @media (max-width: $dekstop) {
+        opacity: 1;
+        visibility: visible;
+        position: static;
+        padding: 0;
+        transform: scaleY(100%);
+        box-shadow: none;
+        min-height: auto;
+        display: none;
+    }
+}
+.subnav__link {
+    color: $dark;
+    font-size: 1.8rem;
+
+    padding: 1rem 0;
+
+    &:hover {
+        color: $red;
+    }
+
+    @media (max-width: $dekstop) {
+        border-bottom: 1px solid rgba(0,0,0,.06);
+        padding: 1rem 0 1rem 2.5rem;
+        font-size: 1.4rem;
+        color: $dark-blue;
+        font-weight: 600;
+    }
+}

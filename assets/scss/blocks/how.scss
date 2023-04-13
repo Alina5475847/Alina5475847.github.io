@@ -1,0 +1,63 @@
+.how {
+    margin-top: 10rem;
+}
+.how__block {
+    margin-bottom: 4rem;
+}
+.how__title {
+    color: $dark-blue;
+    font-size: 600;
+    font-size: 4.5rem;
+    line-height: 1;
+
+    margin-bottom: 3rem;
+
+    @media (max-width: $mobile) {
+        font-size: 3rem;
+    }
+}
+.how__text {
+    font-size: 1.7rem;
+    color: $black;
+    line-height: 1.7;
+
+    a {
+        color: $red;
+    }
+}
+.how__list {
+    margin-top: 3rem;
+    font-size: 1.7rem;
+    color: $black;
+    line-height: 1.7;
+
+    padding-left: 6rem;
+
+    li {
+        list-style: disc;
+    }
+
+    @media (max-width: $mobile) {
+        padding-left: 2rem;
+    }
+}
+.how__inner {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70rem;
+    margin: 5rem -1rem 0;
+}
+.how__item {
+    width: 50%;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+
+    button {
+        width: 100%;
+        font-weight: 700;
+    }
+
+    @media (max-width: $mobile) {
+        width: 100%;
+    }
+}

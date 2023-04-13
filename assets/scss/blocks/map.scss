@@ -1,0 +1,17 @@
+.map {
+    max-width: 134rem;
+    margin: auto;
+    margin-bottom: 10rem;
+    padding: 0 1.5rem;
+
+    iframe {
+        width: 100%;
+        height: 50rem;
+    }
+
+    @media (max-width: $mobile) {
+        iframe {
+            height: 30rem;
+        }
+    }
+}

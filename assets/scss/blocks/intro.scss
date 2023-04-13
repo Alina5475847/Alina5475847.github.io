@@ -1,0 +1,89 @@
+.intro {
+    margin-top: 6rem;
+    margin-left: 6rem;
+
+    @media (max-width: $tablet) {
+        margin-left: 0;
+    }
+}
+.intro__container {
+}
+.intro__title {
+    font-size: 5rem;
+    color: $dark-blue;
+    font-weight: 600;
+    line-height: calc(40 / 50);
+
+    margin-bottom: 3rem;
+    span {
+        color: $red;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 8vw;
+        line-height: 10vw;
+    }
+}
+.intro__content {
+    border-top: 1px solid #EAEAEA;
+    padding-top: 3.5rem;
+}
+.intro__text {
+    color: $dark-blue;
+    p {
+        font-size: 1.7rem;
+    }
+}
+.intro__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 2.6rem;
+    max-width: 80rem;
+
+    @media (max-width: $tablet) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+.intro__btn {
+    max-width: 17.6rem;
+    width: 100%;
+
+    button {
+        width: 100%;
+    }
+
+    @media (max-width: $tablet) {
+        margin-bottom: 2rem;
+    }
+}
+.btn__arrow {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+.intro__right {
+    display: flex;
+    align-items: center;
+}
+.intro__icon {
+    margin-right: 7rem;
+
+    @media (max-width: $tablet) {
+        margin-right: 3rem;
+    }
+}
+.intro__main {
+}
+.intro__suptitle {
+    font-size: 1.4rem;
+    line-height: calc(14 / 14);
+    color: #2C2C2C;
+}
+.intro__mail {
+    color: $red;
+    font-size: 1.8rem;
+    font-weight: 600;
+}

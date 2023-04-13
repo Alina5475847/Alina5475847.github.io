@@ -1,0 +1,111 @@
+.contacts {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+.contacts__container {
+}
+.contacts__title {
+    color: $dark-blue;
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.contacts__form {
+    width: 100%;
+}
+.contacts__inner {
+    width: 100%;
+    display: flex;
+
+    @media (max-width: 480px) {
+        flex-wrap: wrap;
+    }
+}
+.contacts__item {
+    width: 50%;
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    input {
+        border: 1px solid #eaeaea;
+        min-height: 4.1rem;
+        width: 100%;
+        color: #4d5765;
+        background-color: #edeff3;
+        font-size: 1.6rem;
+        font-family: 'Source Sans Pro', sans-serif;
+        border-radius: .6rem;
+        padding: 0 1rem;
+        outline: 0;
+
+        &:focus {
+            background: $white;
+            border-color: #3270fc;
+        }
+    }
+
+    @media (max-width: 480px) {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+.contacts__textarea {
+    textarea {
+        width: 100%;
+        min-height: 12rem;
+        resize: none;
+        color: #4d5765;
+        background-color: #edeff3;
+        font-size: 1.6rem;
+        font-family: 'Source Sans Pro', sans-serif;
+        border-radius: .6rem;
+        padding: 1rem;
+        outline: 0;
+        border: 1px solid #eaeaea;
+
+        &:focus {
+            background: $white;
+            border-color: #3270fc;
+        }
+    }
+}
+.contacts__bottom {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+.contacts__checkbox {
+    margin-right: .5rem;
+    input {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+}
+.contacts__text {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #4D5765;
+
+    a {
+        color: $red;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+.contacts__button {
+    width: 100%;
+    max-width: 15.5rem;
+    margin-top: 2rem;
+
+    button {
+        width: 100%;
+    }
+}
