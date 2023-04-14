@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+</head>
+<body>
+
+    <svg style="display: none">
+        <symbol id="mark" viewBox="0 0 31 31">
+            <path d="M14.9853 17.7733L16.8091 19.5972L27.7437 8.66243L29.5705 10.4891L16.8091 23.2505L8.58893 15.0303L10.4156 13.2037L13.1601 15.9482L14.9853 17.7733ZM14.9875 14.1209L21.3846 7.72363L23.2062 9.54524L16.8091 15.9424L14.9875 14.1209ZM11.3363 21.4254L9.51113 23.2505L1.29102 15.0303L3.1177 13.2037L4.94285 15.0289L4.94132 15.0303L11.3363 21.4254Z"/>
+        </symbol>
+        <symbol id="cross" viewBox="0 0 31 31">
+            <path d="M15.5014 13.6742L21.8948 7.28076L23.7214 9.10745L17.3281 15.5009L23.7214 21.8943L21.8948 23.7209L15.5014 17.3276L9.10794 23.7209L7.28125 21.8943L13.6747 15.5009L7.28125 9.10745L9.10794 7.28076L15.5014 13.6742Z"/>
+        </symbol>
+        <symbol viewBox="0 0 16 16" id="arrow">
+            <path d="M12.1716 6.9999L6.8076 1.63589L8.2218 0.22168L16 7.9999L8.2218 15.778L6.8076 14.3638L12.1716 8.9999H0V6.9999H12.1716Z"/>
+        </symbol>
+        <symbol></symbol>
+    </svg>
+
+    <div class="wrapper">
+            <header class="header">
+                <div class="header__container">
+                    <a href="#" class="header__logo">
+                        <img src="assets/img/header/logo.svg" alt="cover">
+                    </a>
+                </div>
+            </header>
+            <main class="main">
+                <section class="intro">
+                    <div class="intro__container">
+                        <div class="intro__content">
+                            <h1 class="intro__title">ПОЛУЧЕНИЕ <br>
+                                ВИЗЫ В КИТАЙ</h1>
+                            <div class="intro__subtitle">В МОСКВЕ И САНКТ-ПЕТЕРБУРГЕ</div>
+                            <div class="intro__text"><span>ONE</span> — надёжный визовый партнёр, мы занимаемся не только переводом с / на китайский язык и консульской легализацией документов для КНР, но и оформлением виз для КНР. 
+                                У вас есть возможность получить все услуги в одном месте с гарантированным уровнем качества</div>
+                        </div>
+                        <div class="intro__right">
+                            <div class="intro__photo">
+                                <img src="assets/img/intro/flag.webp" alt="cover">
+                            </div>
+                            <div class="intro__decor"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="cost">
+                    <div class="cost__container">
+                        <div class="cost__header">
+                            <h4 class="cost__title title-block">СТОИМОСТЬ ПОЛУЧЕНИЯ ВИЗЫ В КИТАЙ</h4>
+                            <div class="cost__subtitle">В стоимость входит:</div>
+                        </div>
+                        <div class="cost__tabs">
+                            <div class="cost__tab">
+                                <div class="cost__tab-col">
+                                    <div class="cost__tab-icon">
+                                        <img src="assets/img/cost/cost-1.png" alt="cover">
+                                        <div class="cost__tab-icon-block"></div>
+                                    </div>
+                                    <div class="cost__tab-text">Консультация</div>
+                                </div>
+                            </div>
+                            <div class="cost__tab">
+                                <div class="cost__tab-col">
+                                    <div class="cost__tab-icon">
+                                        <img src="assets/img/cost/cost-2.png" alt="cover">
+                                        <div class="cost__tab-icon-block"></div>
+                                    </div>
+                                    <div class="cost__tab-text">Доставка готовых документов по Москве</div>
+                                </div>
+                            </div>
+                            <div class="cost__tab">
+                                <div class="cost__tab-col">
+                                    <div class="cost__tab-icon">
+                                        <img src="assets/img/cost/cost-3.png" alt="cover">
+                                        <div class="cost__tab-icon-block"></div>
+                                    </div>
+                                    <div class="cost__tab-text">заполнение анкеты</div>
+                                </div>
+                            </div>
+                            <div class="cost__tab">
+                                <div class="cost__tab-col">
+                                    <div class="cost__tab-icon">
+                                        <img src="assets/img/cost/cost-4.png" alt="cover">
+                                        <div class="cost__tab-icon-block"></div>
+                                    </div>
+                                    <div class="cost__tab-text">Уплата консульского сбора</div>
+                                </div>
+                            </div>
+                            <div class="cost__tab">
+                                <div class="cost__tab-col">
+                                    <div class="cost__tab-icon">
+                                        <img src="assets/img/cost/cost-5.png" alt="cover">
+                                        <div class="cost__tab-icon-block"></div>
+                                    </div>
+                                    <div class="cost__tab-text">Подача документов визовым специалистом в консульство</div>
+                                </div>
+                            </div>
+                            <div class="cost__tab">
+                                <div class="cost__tab-col">
+                                    <div class="cost__tab-icon">
+                                        <img src="assets/img/cost/cost-6.png" alt="cover">
+                                        <div class="cost__tab-icon-block"></div>
+                                    </div>
+                                    <div class="cost__tab-text">запись на подачу документов онлайн</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cost__inner">
+                            <div class="cost__col">
+                                <div class="cost__item">
+                                    <div class="cost__item-header">
+                                        <div class="cost__item-suptitle">за 1 комплект документов</div>
+                                        <div class="cost__item-title">Однократная виза</div>
+                                    </div>
+                                    <div class="cost__item-body">
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">M</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">X</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">F</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">S</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">L</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">J</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">R</div>
+                                            <div class="cost__item-mark cost__item-mark--cross">
+                                                <svg>
+                                                    <use xlink:href="#cross"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">Q</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">Z</div>
+                                            <div class="cost__item-mark cost__item-mark--cross">
+                                                <svg>
+                                                    <use xlink:href="#cross"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cost__item-bottom">
+                                        <div class="cost__item-cost">23 300 ₽</div>
+                                        <div class="cost__item-button">
+                                            <button class="btn" data-modal="modal">
+                                                <div class="btn__text">Подать заявку</div>
+                                                <div class="btn__arrow">
+                                                    <svg>
+                                                        <use xlink:href="#arrow"></use>
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cost__col">
+                                <div class="cost__item">
+                                    <div class="cost__item-header">
+                                        <div class="cost__item-suptitle">за 1 комплект документов</div>
+                                        <div class="cost__item-title">Двукратная виза</div>
+                                    </div>
+                                    <div class="cost__item-body">
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">M</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">X</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">F</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">S</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">L</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">J</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">R</div>
+                                            <div class="cost__item-mark cost__item-mark--cross">
+                                                <svg>
+                                                    <use xlink:href="#cross"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">Q</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">Z</div>
+                                            <div class="cost__item-mark cost__item-mark--cross">
+                                                <svg>
+                                                    <use xlink:href="#cross"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cost__item-bottom">
+                                        <div class="cost__item-cost">26 600 ₽</div>
+                                        <div class="cost__item-button">
+                                            <button class="btn" data-modal="modal">
+                                                <div class="btn__text">Подать заявку</div>
+                                                <div class="btn__arrow">
+                                                    <svg>
+                                                        <use xlink:href="#arrow"></use>
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cost__col">
+                                <div class="cost__item">
+                                    <div class="cost__item-header">
+                                        <div class="cost__item-suptitle">за 1 комплект документов</div>
+                                        <div class="cost__item-title">Мультивиза</div>
+                                    </div>
+                                    <div class="cost__item-body">
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">M</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">X</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">F</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">S</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">L</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">J</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">R</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">Q</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cost__item-block">
+                                            <div class="cost__item-letter">Z</div>
+                                            <div class="cost__item-mark cost__item-mark--mark">
+                                                <svg>
+                                                    <use xlink:href="#mark"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cost__item-bottom">
+                                        <div class="cost__item-cost">29 990 ₽</div>
+                                        <div class="cost__item-button">
+                                            <button class="btn" data-modal="modal">
+                                                <div class="btn__text">Подать заявку</div>
+                                                <div class="btn__arrow">
+                                                    <svg>
+                                                        <use xlink:href="#arrow"></use>
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="kind kind--dekst">
+                    <div class="kind__container">
+                        <h4 class="kind__title">Типы виз для КНР</h4>
+                        <div class="kind__inner">
+                            <div class="kind__col">
+                                <div class="kind__item">
+                                    <div class="kind__item-header">M;F;</div>
+                                    <div class="kind__item-text">бизнес-виза, которые подойдёт для переговоров и коммерческих встреч с партнёрами развернуть</div>
+                                </div>
+                            </div>
+                            <div class="kind__col">
+                                <div class="kind__item">
+                                    <div class="kind__item-header">S2;Q2;</div>
+                                    <div class="kind__item-text">краткосрочная учебная виза в пределах 180 дней, которая подойдёт, если вы едете на один семестр по обмену или на курсы в Китае</div>
+                                </div>
+                            </div>
+                            <div class="kind__col">
+                                <div class="kind__item">
+                                    <div class="kind__item-header">X2</div>
+                                    <div class="kind__item-text">краткосрочная учебная виза в пределах 180 дней, которая подойдёт, если вы едете на один семестр по обмену или на курсы в Китае</div>
+                                </div>
+                            </div>
+                            <div class="kind__col">
+                                <div class="kind__item">
+                                    <div class="kind__item-header">J2</div>
+                                    <div class="kind__item-text">краткосрочная виза для журналистов</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="time">
+                    <div class="time__container">
+                        <h4 class="time__title title-block">СРОКИ ИЗГОТОВЛЕНИЯ И СТОИМОСТЬ В КИТАЙ</h4>
+                        <div class="time__inner">
+                            <div class="time__col">
+                                <div class="time__item">
+                                    <div class="time__item-content">
+                                        <div class="time__item-title">6 рабочих дней</div>
+                                        <div class="time__item-text">Получить рабочую визу для КНР в Москве</div>
+                                        <div class="time__item-subtitle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="time__col">
+                                <div class="time__item">
+                                    <div class="time__item-content">
+                                        <div class="time__item-title">4 рабочих дня</div>
+                                        <div class="time__item-text">За срочное получение визы</div>
+                                        <div class="time__item-subtitle">*необходимо доплатить 2 000 ₽ за каждый пакет документов.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="time__col">
+                                <div class="time__item">
+                                    <div class="time__item-content">
+                                        <div class="time__item-title">3 рабочих дня</div>
+                                        <div class="time__item-text">За сверхсрочное получение визы</div>
+                                        <div class="time__item-subtitle">*необходимо доплатить 4 600 ₽ за каждый пакет документов.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="time__bottom">
+                            <div class="time__text">Обратите внимание, что в Москве большая очередь на получение виз в Китай. Мы можем ускорить процесс и подать ваши документы в Санкт-Петербурге, доплатить за это необходимо 5 000 ₽.</div>
+                            <div class="time__btn">
+                                <button class="btn">
+                                    <div class="btn__text">Подать заявку</div>
+                                    <div class="btn__arrow">
+                                        <svg>
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="contacts">
+                    <div class="contacts__container">
+                        <div class="contacts__content">
+                            <h4 class="contacts__title title-block">КАК ОТДАТЬ ДОКУМЕНТЫ В РАБОТУ?</h4>
+                            <div class="contacts__text">Если документы находятся в Москве, то проще всего приехать к нам в офис или вызвать нашего курьера и передать ему документы.
+                                Если документы в России, но не в Москве, то вы можете отправить нам все необходимые бумаги курьерской службой 
+                                (рекомендуем «СДЭК»).
+                                Забрать готовую визу вы можете лично в офисе или воспользоваться службой курьерской доставки.</div>
+                            <div class="contacts__inner">
+                                <div class="contacts__col">
+                                    <div class="contacts__item">
+                                        <address class="contacts__item-text">Арбатская, Нижний Кисловский переулок, 7/1</address>
+                                        <div class="contacts__item-subtitle">Москва</div>
+                                    </div>
+                                </div>
+                                <div class="contacts__col">
+                                    <div class="contacts__item">
+                                        <div class="contacts__item-text">с 10:00–19:00</div>
+                                        <div class="contacts__item-subtitle">Понедельник пятница</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.2638991757767!2d37.60099007679034!3d55.75391777308463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a4e76cef98d%3A0x35fedeeb89a227d1!2z0J3QuNC20L3QuNC5INCa0LjRgdC70L7QstGB0LrQuNC5INC_0LXRgC4sIDcsINGB0YLRgNC-0LXQvdC40LUgMSwg0JzQvtGB0LrQstCwLCAxMjUwMDk!5e0!3m2!1sru!2sru!4v1681481720050!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </section>
+                <section class="pay">
+                    <div class="pay__container">
+                        <h4 class="pay__title title-block">ПОРЯДОК И СПОСОБЫ ОПЛАТЫ</h4>
+                        <div class="pay__text">Мы работаем по предоплате. Когда мы получаем документы, то просим вас оплатить 50% суммы заказа. Как только все будет готово и получено из консульства, мы вышлем вам сканы и фотографии готовой визы и попросим оплатить оставшуюся половину суммы.</div>
+                        <div class="pay__inner">
+                            <div class="pay__item">
+                                <div class="pay__icon">
+                                    <img src="assets/img/pay/icon-1.webp" alt="cover">
+                                </div>
+                                <div class="pay__subtitle">Наличными в офисе</div>
+                            </div>
+                            <div class="pay__item">
+                                <div class="pay__icon">
+                                    <img src="assets/img/pay/icon-2.webp" alt="cover">
+                                </div>
+                                <div class="pay__subtitle">Банковской картой</div>
+                            </div>
+                            <div class="pay__item">
+                                <div class="pay__icon">
+                                    <img src="assets/img/pay/icon-3.webp" alt="cover">
+                                </div>
+                                <div class="pay__subtitle">Безналичная оплата (на р/с)</div>
+                            </div>
+                            <div class="pay__item">
+                                <div class="pay__icon">
+                                    <img src="assets/img/pay/icon-4.webp" alt="cover">
+                                </div>
+                                <div class="pay__subtitle">СберБанк Онлайн</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="kind kind--mob">
+                    <div class="kind__container">
+                        <h4 class="kind__title">Типы виз для КНР</h4>
+                        <div class="kind__inner">
+                            <div class="kind__col">
+                                <div class="kind__item">
+                                    <div class="kind__item-header">M;F;</div>
+                                    <div class="kind__item-text">бизнес-виза, которые подойдёт для переговоров и коммерческих встреч с партнёрами развернуть</div>
+                                </div>
+                            </div>
+                            <div class="kind__col">
+                                <div class="kind__item">
+                                    <div class="kind__item-header">S2;Q2;</div>
+                                    <div class="kind__item-text">краткосрочная учебная виза в пределах 180 дней, которая подойдёт, если вы едете на один семестр по обмену или на курсы в Китае</div>
+                                </div>
+                            </div>
+                            <div class="kind__col">
+                                <div class="kind__item">
+                                    <div class="kind__item-header">X2</div>
+                                    <div class="kind__item-text">краткосрочная учебная виза в пределах 180 дней, которая подойдёт, если вы едете на один семестр по обмену или на курсы в Китае</div>
+                                </div>
+                            </div>
+                            <div class="kind__col">
+                                <div class="kind__item">
+                                    <div class="kind__item-header">J2</div>
+                                    <div class="kind__item-text">краткосрочная виза для журналистов</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__left">
+                        <a href="#" class="footer__logo">
+                            <img src="assets/img/footer/logo.png" alt="cover">
+                        </a>
+                        <div class="footer__bottom">
+                            <a href="#" class="footer__text">политика конфиденциальности</a>
+                            <a href="#" class="footer__text">Оферта</a>
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__button">
+                            <button class="btn">
+                                <div class="btn__text">Подать заявку</div>
+                                <div class="btn__arrow">
+                                    <svg>
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="footer__text">Copyright © 2023 viza-one. Все права защищены.</div>
+                    </div>
+                </div>
+            </footer>
+    </div>
+
+    <div class="modal" data-modal-window="modal">
+        <div class="modal__dialog">
+            <div class="modal__close">
+                <img src="assets/img/modal/close.svg" alt="cover">
+            </div>
+            <div class="modal__title">Связаться с нами</div>
+            <form action="#" class="modal__form">
+                <div class="modal__form-item">
+                    <input type="tel" value="+7 (988) 184-25-74">
+                </div>
+                <div class="modal__form-item">
+                    <input type="email" placeholder="Почта">
+                </div>
+                <div class="modal__form-item">
+                    <textarea placeholder="Комментарий"></textarea>
+                </div>
+            </form>
+            <div class="modal__block">
+                <div class="modal__block-top">Как удобнее связаться с вами</div>
+                <div class="modal__block-body">
+                    <div class="modal__element">
+                        <input type="radio">
+                        <div class="modal__element-text">
+                            Телефон
+                        </div>
+                    </div>
+                    <div class="modal__element">
+                        <input type="radio">
+                        <div class="modal__element-text">
+                            Почта
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__load">
+                <div class="modal__load-plus">
+                    <img src="assets/img/modal/plus.svg" alt="cover">
+                </div>
+                <div class="modal__load-text">Загрузить файл</div>
+            </div>
+            <div class="modal__button">
+                <button class="btn">
+                    <div class="btn__text">Подать заявку</div>
+                    <div class="btn__arrow">
+                        <svg>
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
