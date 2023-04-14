@@ -1,0 +1,41 @@
+.btn {
+    display: flex;
+    align-items: center;
+
+    border: .1rem solid $red;
+    border-radius: 3.2rem;
+    min-height: 5rem;
+    padding: 0 2rem;
+
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 1.6rem;
+    line-height: 110%;
+    color: $red;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: all .2s linear;
+
+    &:hover {
+        background-color: $red;
+        color: $white;
+
+        .btn__arrow {
+            svg {
+                fill: $white;
+            }
+        }
+    }
+}
+
+.btn__arrow {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+
+    svg {
+        fill: $red;
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+}

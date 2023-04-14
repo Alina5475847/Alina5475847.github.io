@@ -1,0 +1,22 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 2.5rem;
+}
+.header__container {
+}
+.header__logo {
+    display: block;
+
+    @media (max-width: 600px) {
+        width: 21.6rem;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
