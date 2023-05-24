@@ -8133,6 +8133,7 @@ input[type=range].zoom::-webkit-slider-runnable-track {
   padding: 0 10px;
   height: 100%;
   min-height: 60px;
+  width: 15%;
 }
 
 .notifications__content {
@@ -8150,6 +8151,7 @@ input[type=range].zoom::-webkit-slider-runnable-track {
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 0 40px 0 10px;
+  width: 85%;
 }
 
 .notifications__text {
