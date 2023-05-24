@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./libs/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+    <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="login-wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__items">
+            <div class="header__burger">
+              <img src="images/burger.svg" alt="" />
+            </div>
+            <a href="#" class="header__logo">
+              <img src="images/logo.png" alt="" />
+            </a>
+            <div></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="drop-menu">
+        <div class="drop-menu__inner">
+          <div class="drop-menu__strong">
+            <img src="images/burger-strong.svg" alt="" />
+          </div>
+          <ul class="drop-menu__nav">
+            <li><a href="#">Конфиденциальность</a></li>
+            <li><a href="#">Правила платформы</a></li>
+            <li><a href="#">Управление подпиской</a></li>
+            <li><a href="#">Условия оплаты</a></li>
+            <li><a href="#">Написать в поддержку</a></li>
+            <li><a href="#">Возмещение</a></li>
+          </ul>
+          <div class="drop-menu__exit">Выход</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="login">
+          <div class="login__start">
+            <div class="login__logo">
+              <img src="images/logo.png" alt="" />
+            </div>
+            <div class="login__content">
+              <div class="login__inner">
+                <div class="login__header">
+                  <div class="login__title">Войдите или зарегистрируйтесь</div>
+                  <div class="login__tabs-inner">
+                    <div class="login__tabs">
+                      <a href="sign-in.html" class="active"><span>Регистрация</span></a>
+                      <a href="login.html"><span>Вход</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="login__registrs">
+                  <div class="login__registr login__registr-first">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Укажите ваш пол</div>
+                      <div class="login__pols-items">
+                        <div class="login__pols-item">
+                          <input type="radio" name="pols" />
+                          <span>
+                            <svg
+                              width="21"
+                              height="20"
+                              viewBox="0 0 21 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M9.875 12.15C12.4638 12.15 14.5625 10.0514 14.5625 7.46252C14.5625 4.87369 12.4638 2.77502 9.875 2.77502C7.28617 2.77502 5.1875 4.87369 5.1875 7.46252C5.1875 10.0514 7.28617 12.15 9.875 12.15Z"
+                                stroke="black"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.875 12.15V17.15"
+                                stroke="black"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M7.375 14.9625H12.375"
+                                stroke="black"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            Женский</span
+                          >
+                        </div>
+                        <div class="login__pols-item">
+                          <input type="radio" name="pols" />
+                          <span>
+                            <svg
+                              width="21"
+                              height="20"
+                              viewBox="0 0 21 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.69922 15.9C11.2881 15.9 13.3867 13.8014 13.3867 11.2125C13.3867 8.62369 11.2881 6.52502 8.69922 6.52502C6.11038 6.52502 4.01172 8.62369 4.01172 11.2125C4.01172 13.8014 6.11038 15.9 8.69922 15.9Z"
+                                stroke="white"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M12.4492 4.65002H15.5742V7.77502"
+                                stroke="white"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M12.168 8.05627L15.5742 4.65002"
+                                stroke="white"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            Мужской</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-next">Далее</div>
+                    </div>
+                  </div>
+                  <div class="login__registr login__registr-second">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Укажите ваше имя</div>
+                      <div class="login__registr-input">
+                        <input type="text" placeholder="Введите имя" />
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-prev">Назад</div>
+                      <div class="login__registr-next">Далее</div>
+                    </div>
+                  </div>
+                  <div class="login__registr login__registr-third">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Укажите вашу дату рождения</div>
+                      <div class="edit-profile__dates">
+                        <div class="edit-profile__date">
+                          <div class="t-dropdown-block">
+                            <div class="t-dropdown-select">
+                              <input type="text" class="t-dropdown-input" readonly placeholder="День" />
+                            </div>
+                            <div class="t-dropdown-list">
+                              <ul>
+                                <li class="t-dropdown-item">1</li>
+                                <li class="t-dropdown-item">2</li>
+                                <li class="t-dropdown-item">3</li>
+                                <li class="t-dropdown-item">4</li>
+                                <li class="t-dropdown-item">5</li>
+                                <li class="t-dropdown-item">6</li>
+                                <li class="t-dropdown-item">7</li>
+                                <li class="t-dropdown-item">8</li>
+                                <li class="t-dropdown-item">9</li>
+                                <li class="t-dropdown-item">10</li>
+                                <li class="t-dropdown-item">11</li>
+                                <li class="t-dropdown-item">12</li>
+                                <li class="t-dropdown-item">13</li>
+                                <li class="t-dropdown-item">14</li>
+                                <li class="t-dropdown-item">15</li>
+                                <li class="t-dropdown-item">16</li>
+                                <li class="t-dropdown-item">17</li>
+                                <li class="t-dropdown-item">18</li>
+                                <li class="t-dropdown-item">19</li>
+                                <li class="t-dropdown-item">20</li>
+                                <li class="t-dropdown-item">21</li>
+                                <li class="t-dropdown-item">22</li>
+                                <li class="t-dropdown-item">23</li>
+                                <li class="t-dropdown-item">24</li>
+                                <li class="t-dropdown-item">25</li>
+                                <li class="t-dropdown-item">26</li>
+                                <li class="t-dropdown-item">27</li>
+                                <li class="t-dropdown-item">28</li>
+                                <li class="t-dropdown-item">29</li>
+                                <li class="t-dropdown-item">30</li>
+                                <li class="t-dropdown-item">31</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edit-profile__date">
+                          <div class="t-dropdown-block">
+                            <div class="t-dropdown-select">
+                              <input type="text" class="t-dropdown-input" readonly placeholder="Месяц" />
+                            </div>
+                            <div class="t-dropdown-list">
+                              <ul>
+                                <li class="t-dropdown-item">Январь</li>
+                                <li class="t-dropdown-item">Февраль</li>
+                                <li class="t-dropdown-item">Март</li>
+                                <li class="t-dropdown-item">Апрель</li>
+                                <li class="t-dropdown-item">Май</li>
+                                <li class="t-dropdown-item">Июнь</li>
+                                <li class="t-dropdown-item">Июль</li>
+                                <li class="t-dropdown-item">Август</li>
+                                <li class="t-dropdown-item">Сентябрь</li>
+                                <li class="t-dropdown-item">Октябрь</li>
+                                <li class="t-dropdown-item">Ноябрь</li>
+                                <li class="t-dropdown-item">Декабрь</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="edit-profile__date">
+                          <div class="t-dropdown-block">
+                            <div class="t-dropdown-select">
+                              <input type="text" class="t-dropdown-input" readonly placeholder="Год" />
+                            </div>
+                            <div class="t-dropdown-list">
+                              <ul>
+                                <li class="t-dropdown-item">2008</li>
+                                <li class="t-dropdown-item">2007</li>
+                                <li class="t-dropdown-item">2006</li>
+                                <li class="t-dropdown-item">2005</li>
+                                <li class="t-dropdown-item">2004</li>
+                                <li class="t-dropdown-item">2003</li>
+                                <li class="t-dropdown-item">2002</li>
+                                <li class="t-dropdown-item">2001</li>
+                                <li class="t-dropdown-item">2000</li>
+                                <li class="t-dropdown-item">1999</li>
+                                <li class="t-dropdown-item">1998</li>
+                                <li class="t-dropdown-item">1997</li>
+                                <li class="t-dropdown-item">1996</li>
+                                <li class="t-dropdown-item">1995</li>
+                                <li class="t-dropdown-item">1994</li>
+                                <li class="t-dropdown-item">1993</li>
+                                <li class="t-dropdown-item">1992</li>
+                                <li class="t-dropdown-item">1991</li>
+                                <li class="t-dropdown-item">1990</li>
+                                <li class="t-dropdown-item">1989</li>
+                                <li class="t-dropdown-item">1988</li>
+                                <li class="t-dropdown-item">1987</li>
+                                <li class="t-dropdown-item">1986</li>
+                                <li class="t-dropdown-item">1985</li>
+                                <li class="t-dropdown-item">1984</li>
+                                <li class="t-dropdown-item">1983</li>
+                                <li class="t-dropdown-item">1982</li>
+                                <li class="t-dropdown-item">1981</li>
+                                <li class="t-dropdown-item">1980</li>
+                                <li class="t-dropdown-item">1979</li>
+                                <li class="t-dropdown-item">1978</li>
+                                <li class="t-dropdown-item">1977</li>
+                                <li class="t-dropdown-item">1976</li>
+                                <li class="t-dropdown-item">1975</li>
+                                <li class="t-dropdown-item">1974</li>
+                                <li class="t-dropdown-item">1973</li>
+                                <li class="t-dropdown-item">1972</li>
+                                <li class="t-dropdown-item">1971</li>
+                                <li class="t-dropdown-item">1970</li>
+                                <li class="t-dropdown-item">1969</li>
+                                <li class="t-dropdown-item">1968</li>
+                                <li class="t-dropdown-item">1967</li>
+                                <li class="t-dropdown-item">1966</li>
+                                <li class="t-dropdown-item">1965</li>
+                                <li class="t-dropdown-item">1964</li>
+                                <li class="t-dropdown-item">1963</li>
+                                <li class="t-dropdown-item">1962</li>
+                                <li class="t-dropdown-item">1961</li>
+                                <li class="t-dropdown-item">1960</li>
+                                <li class="t-dropdown-item">1959</li>
+                                <li class="t-dropdown-item">1958</li>
+                                <li class="t-dropdown-item">1957</li>
+                                <li class="t-dropdown-item">1956</li>
+                                <li class="t-dropdown-item">1955</li>
+                                <li class="t-dropdown-item">1954</li>
+                                <li class="t-dropdown-item">1953</li>
+                                <li class="t-dropdown-item">1952</li>
+                                <li class="t-dropdown-item">1951</li>
+                                <li class="t-dropdown-item">1950</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-prev">Назад</div>
+                      <div class="login__registr-next">Далее</div>
+                    </div>
+                  </div>
+                  <div class="login__registr login__registr-foure">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Укажите ваш город</div>
+                      <div class="edit-profile__lang-search">
+                        <div class="t-dropdown-block searchable4">
+                          <div class="t-dropdown-select">
+                            <input
+                              type="text"
+                              class="t-dropdown-input"
+                              onkeyup="filterFunction4(this,event)"
+                              placeholder="Выберите или введите ваш город"
+                            />
+                          </div>
+                          <div class="t-dropdown-list">
+                            <span>Ничего не найдено</span>
+                            <ul>
+                              <li class="t-dropdown-item">Москва</li>
+                              <li class="t-dropdown-item">Ростов-на-Дону</li>
+                              <li class="t-dropdown-item">Воронеж</li>
+                              <li class="t-dropdown-item">Санкт-Петербург</li>
+                              <li class="t-dropdown-item">Тула</li>
+                              <li class="t-dropdown-item">Краснодар</li>
+                              <li class="t-dropdown-item">Сочи</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-prev">Назад</div>
+                      <div class="login__registr-next">Далее</div>
+                    </div>
+                  </div>
+                  <div class="login__registr login__registr-five">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Ваш статус отношений</div>
+                      <div class="edit-profile__lang-search">
+                        <div class="t-dropdown-block searchable4">
+                          <div class="t-dropdown-select">
+                            <input
+                              type="text"
+                              class="t-dropdown-input"
+                              onkeyup="filterFunction4(this,event)"
+                              placeholder="Свободен"
+                            />
+                          </div>
+                          <div class="t-dropdown-list">
+                            <span>Ничего не найдено</span>
+                            <ul>
+                              <li class="t-dropdown-item">Свободен</li>
+                              <li class="t-dropdown-item">В активном поиске</li>
+                              <li class="t-dropdown-item">Всё сложно</li>
+                              <li class="t-dropdown-item">Женат</li>
+                              <li class="t-dropdown-item">Свободен</li>
+                              <li class="t-dropdown-item">В активном поиске</li>
+                              <li class="t-dropdown-item">Всё сложно</li>
+                              <li class="t-dropdown-item">Женат</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-prev">Назад</div>
+                      <div class="login__registr-next">Далее</div>
+                    </div>
+                  </div>
+                  <div class="login__registr login__registr-six">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Какая цель вашего знакомства</div>
+                      <div class="edit-profile__lang-search">
+                        <div class="t-dropdown-block searchable4">
+                          <div class="t-dropdown-select">
+                            <input
+                              type="text"
+                              class="t-dropdown-input"
+                              onkeyup="filterFunction4(this,event)"
+                              placeholder="Семья"
+                            />
+                          </div>
+                          <div class="t-dropdown-list">
+                            <span>Ничего не найдено</span>
+                            <ul>
+                              <li class="t-dropdown-item">Семья</li>
+                              <li class="t-dropdown-item">Любовь</li>
+                              <li class="t-dropdown-item">Семья</li>
+                              <li class="t-dropdown-item">Любовь</li>
+                              <li class="t-dropdown-item">Семья</li>
+                              <li class="t-dropdown-item">Любовь</li>
+                              <li class="t-dropdown-item">Семья</li>
+                              <li class="t-dropdown-item">Любовь</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-prev">Назад</div>
+                      <div class="login__registr-next">Далее</div>
+                    </div>
+                  </div>
+                  <div class="login__registr login__registr-seven">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Какого возраста девушки вам нравятся?</div>
+                      <div class="edit-profile__lang-search">
+                        <div class="saidbar__drop-years">
+                          <p>Возраст</p>
+                          <p>от <span id="range-from">18</span> до <span id="range-to">65</span> лет</p>
+                        </div>
+                        <input type="text" class="js-range-slider js-range-slider-1" name="my_range" value="" />
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-prev">Назад</div>
+                      <div class="login__registr-next">Далее</div>
+                    </div>
+                  </div>
+                  <div class="login__registr login__registr-eight">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Ваш рост</div>
+                      <div class="edit-profile__lang-search">
+                        <div class="saidbar__drop-years">
+                          <p>Рост</p>
+                          <p><span id="range-rost"></span> см</p>
+                        </div>
+                        <input type="text" class="js-range-slider js-range-slider-7" name="my_range" value="" />
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-prev">Назад</div>
+                      <div class="login__registr-next">Далее</div>
+                    </div>
+                  </div>
+                  <div class="login__registr login__registr-ninth">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Введите ваш E-mail</div>
+                      <div class="login__registr-input">
+                        <input type="email" placeholder="example@mail.com" />
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-prev">Назад</div>
+                      <div class="login__registr-next">Далее</div>
+                    </div>
+                  </div>
+                  <div class="login__registr login__registr-ten">
+                    <div class="login__pols">
+                      <div class="login__pols-head">Придумайте пароль</div>
+                      <div class="login__registr-password">
+                        <div class="login__registr-pass">
+                          <div class="login__registr-pass--head">Ваш пароль</div>
+                          <input type="password" placeholder="Ваш пароль" />
+                          <div class="login__registr-pass--see">
+                            <img src="images/pass-see.svg" alt="" />
+                            <img src="images/pass-see-2.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="login__registr-pass">
+                          <div class="login__registr-pass--head">Повторите пароль</div>
+                          <input type="password" placeholder="Повторите пароль" />
+                          <div class="login__registr-pass--see">
+                            <img src="images/pass-see.svg" alt="" />
+                            <img src="images/pass-see-2.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="login__registr-nav">
+                      <div class="login__registr-prev">Назад</div>
+                      <div class="login__registr-complate">Далее</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="login__nav">
+            <ul>
+              <li><a href="#">Конфиденциальность</a></li>
+              <li><a href="#">Правила платформы</a></li>
+              <li><a href="#">Управление подпиской</a></li>
+              <li><a href="#">Условия оплаты</a></li>
+              <li><a href="#">Написать в поддержку</a></li>
+              <li><a href="#">Возмещение</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" data-modal-window="#modal-like">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <img src="/images/modal/close.svg" alt="cover">
+        </div>
+        <div class="modal__photos">
+          <div class="modal__photo">
+            <img src="/images/modal/girl.png" alt="cover">
+          </div>
+          <div class="modal__photo">
+            <img src="/images/modal/man.png" alt="cover">
+          </div>
+          <div class="modal__heart">
+            <img src="/images/modal/hears.svg" alt="cover">
+          </div>
+        </div>
+        <div class="modal__content">
+          <div class="modal__title">Это взаимно!</div>
+          <div class="modal__text">Проявите инициативу, напишите — «Привет!» первым</div>
+          <button class="modal__btn">Сказать «Привет!»</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <img src="/images/modal/close.svg" alt="cover">
+        </div>
+        <div class="modal__content">
+          <div class="modal__title">Ваша подписка отключена</div>
+          <div class="modal__text">Ваша подписка на автоматическое продление Premium доступа отключена</div>
+          <button class="modal__btn">На главную</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <img src="/images/modal/close.svg" alt="cover">
+        </div>
+        <div class="modal__photos">
+          <div class="modal__img">
+            <img src="/images/modal/error.svg" alt="cover">
+          </div>
+        </div>
+        <div class="modal__content">
+          <div class="modal__title">Ошибка приложения!</div>
+          <div class="modal__text">Обратитесь к администрации</div>
+          <button class="modal__btn">Написать в поддержку</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <img src="/images/modal/close.svg" alt="cover">
+        </div>
+        <div class="modal__content">
+          <div class="modal__title">Для продолжения необходимо согласиться с правилами</div>
+          <div class="modal__main">
+            <div class="modal__item">
+              <div class="modal__checkbox">
+                <input type="checkbox">
+              </div>
+              <div class="modal__text">Я соглашаюсь с условиями оплаты услуг сайта спомощью реккурентных платежей</div>
+            </div>
+            <div class="modal__item">
+              <div class="modal__checkbox">
+                <input type="checkbox">
+              </div>
+              <div class="modal__text">Я соглашаюсь c Пользовательским соглашением и Политикой конфиденциальности сайта</div>
+            </div>
+            <div class="modal__item">
+              <div class="modal__checkbox">
+                <input type="checkbox">
+              </div>
+              <div class="modal__text">Я соглашаюсь что Premium доступ будет продлён на 30 дней автоматически на сумму 2970₽ после окончания выбранного периода. Возможно частичное списание: 1485₽ за 15 дней или 990₽ за 10 дней, или 693₽ за 7 дней, или 495₽ за 5 дней использования Premium доступа.</div>
+            </div>
+          </div>
+          <div class="modal__button">
+            <button class="modal__btn-gray">Продолжить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal__complain">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <img src="/images/modal/close.svg" alt="cover">
+        </div>
+        <div class="modal__content">
+          <div class="modal__title">Отправить жалобу</div>
+          <div class="modal__text">Пожалуйста, подробно опишите причину жалобы</div>
+          <div class="modal__main">
+            <div class="modal__form">
+              <textarea placeholder="Ваша жалоба"></textarea>
+            </div>
+          </div>
+          <div class="modal__button">
+            <button class="modal__btn-gray">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <img src="/images/modal/close.svg" alt="cover">
+        </div>
+        <div class="modal__photos">
+          <div class="modal__img">
+            <img src="/images/modal/break-heart.svg" alt="cover">
+          </div>
+        </div>
+        <div class="modal__content">
+          <div class="modal__title">Удалить аккаунт?</div>
+          <div class="modal__text">При удалении аккаунта удалятся все ваши данные с сервера, отменить действие будет нельзя. Вы больше не сможете войти в свой аккаунт.</div>
+          <div class="modal__buttons">
+            <button class="modal__btn-red">Удалить</button>
+            <button class="modal__btn">Отмена</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__dialog"> 
+        <div class="modal__close">
+          <img src="/images/modal/close.svg" alt="cover">
+        </div>
+        <div class="modal__photos">
+          <div class="modal__img">
+            <img src="/images/modal/king.svg" alt="cover">
+          </div>
+        </div>
+        <div class="modal__content">
+          <div class="modal__title">Premium доступ активирован!</div>
+          <div class="modal__subtitle">30 дней</div>
+        </div>
+        <div class="modal__inner">
+          <div class="modal__col">
+            <div class="modal__col-img">
+              <div class="modal__col-icon">
+                <img src="/images/modal/icon-1.svg" alt="cover">
+              </div>
+            </div>
+            <div class="modal__col-text">Постоянный доступ к разделу «Я нравлюсь»</div>
+          </div>
+          <div class="modal__col">
+            <div class="modal__col-img">
+              <div class="modal__col-icon">
+                <img src="/images/modal/icon-2.svg" alt="cover">
+              </div>
+            </div>
+            <div class="modal__col-text">Можете написать любому пользователю</div>
+          </div>
+          <div class="modal__col">
+            <div class="modal__col-img">
+              <div class="modal__col-icon">
+                <img src="/images/modal/icon-3.svg" alt="cover">
+              </div>
+            </div>
+            <div class="modal__col-text">Неограниченное количество свайпов в разделе знакомства</div>
+          </div>
+          <div class="modal__col">
+            <div class="modal__col-img">
+              <div class="modal__col-icon">
+                <img src="/images/modal/icon-4.svg" alt="cover">
+              </div>
+            </div>
+            <div class="modal__col-text">Ваша анкета выше других показывается в поиске</div>
+          </div>
+          <div class="modal__col">
+            <div class="modal__col-img">
+              <div class="modal__col-icon">
+                <img src="/images/modal/icon-5.svg" alt="cover">
+              </div>
+            </div>
+            <div class="modal__col-text">Можете отправлять и просматривать фото в чате</div>
+          </div>
+        </div>
+        <button class="modal__btn">Начать общение</button>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <img src="/images/modal/close.svg" alt="cover">
+        </div>
+        <div class="modal__content">
+          <div class="modal__title">Для продолжения необходимо согласиться с правилами</div>
+          <div class="modal__main">
+            <div class="modal__item">
+              <div class="modal__checkbox">
+                <input type="checkbox">
+              </div>
+              <div class="modal__text">Я соглашаюсь с условиями оплаты услуг сайта спомощью реккурентных платежей</div>
+            </div>
+            <div class="modal__item">
+              <div class="modal__checkbox">
+                <input type="checkbox">
+              </div>
+              <div class="modal__text">Я соглашаюсь c Пользовательским соглашением и Политикой конфиденциальности сайта</div>
+            </div>
+            <div class="modal__item">
+              <div class="modal__checkbox">
+                <input type="checkbox">
+              </div>
+              <div class="modal__text">Я соглашаюсь что Premium доступ будет продлён на 30 дней автоматически на сумму 2970₽ после окончания выбранного периода. Возможно частичное списание: 1485₽ за 15 дней или 990₽ за 10 дней, или 693₽ за 7 дней, или 495₽ за 5 дней использования Premium доступа.</div>
+            </div>
+          </div>
+          <div class="modal__button">
+            <button class="modal__btn-gray">Продолжить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <img src="/images/modal/close.svg" alt="cover">
+        </div>
+        <div class="modal__photos">
+          <div class="modal__img">
+            <img src="/images/modal/premium.svg" alt="cover">
+          </div>
+        </div>
+        <div class="modal__content">
+          <div class="modal__title">Premium доступ</div>
+          <div class="modal__text">Чтобы отправлять сообщения, просматривать фотографии в чате и узнать, кто поставил "Лайк", необходимо приобрести Premium доступ</div>
+          <button class="modal__btn">Купить Premium</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <img src="/images/modal/close.svg" alt="cover">
+        </div>
+        <div class="modal__photos">
+          <div class="modal__img">
+            <img src="/images/modal/camera.svg" alt="cover">
+          </div>
+        </div>
+        <div class="modal__content">
+          <div class="modal__title">Загрузите фотографию</div>
+          <div class="modal__text">Чтобы другие пользователи видели вас в поиске, могли написать сообщение или поставить "Лайк", нужно загрузить своё фото.Анкеты с несколькими портретными фото более популярны. Постарайтесь, чтобы на фото было видно ваше лицо.</div>
+          <button class="modal__btn">Загрузить фото</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <img src="/images/modal/close.svg" alt="cover">
+        </div>
+        <div class="modal__photos">
+          <div class="modal__img">
+            <img src="/images/modal/Clock.svg" alt="cover">
+          </div>
+        </div>
+        <div class="modal__content">
+          <div class="modal__title">Закончились лайки</div>
+          <div class="modal__text">Чтобы ставить неограниченно лайки, нужно приобрести <a href="#">Premium доступ</a></div>
+          <div class="modal__timer">
+            <div class="modal__timer-element">
+              <div class="modal__timer-col">
+                <div class="modal__timer-item">2</div>
+              </div>
+              <div class="modal__timer-col">
+                <div class="modal__timer-item">3</div>
+              </div>
+            </div>
+            <div class="modal__timer-dots">
+              <div class="modal__timer-dot"></div>
+              <div class="modal__timer-dot"></div>
+            </div>
+            <div class="modal__timer-element">
+              <div class="modal__timer-col">
+                <div class="modal__timer-item">5</div>
+              </div>
+              <div class="modal__timer-col">
+                <div class="modal__timer-item">8</div>
+              </div>
+            </div>
+            <div class="modal__timer-dots">
+              <div class="modal__timer-dot"></div>
+              <div class="modal__timer-dot"></div>
+            </div>
+            <div class="modal__timer-element">
+              <div class="modal__timer-col">
+                <div class="modal__timer-item">4</div>
+              </div>
+              <div class="modal__timer-col">
+                <div class="modal__timer-item">4</div>
+              </div>
+            </div>
+          </div>
+          <button class="modal__btn">Загрузить фото</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal__redact">
+      <div class="modal__dialog">
+        <div class="modal__close">
+          <img src="/images/modal/close.svg" alt="cover">
+        </div>
+        <div class="modal__header">
+          <div class="modal__title">Редактирование фото</div>
+        </div>
+        <div class="modal__redact-body">
+          <div class="modal__redact-photo">
+            <img src="/images/modal/redact.png" alt="cover">
+          </div>
+          <div class="modal__redact-content">
+            <div class="modal__redact-block">
+              <div class="modal__redact-top">
+                <div class="modal__redact-inner">
+                  <div class="modal__redact-item modal__redact-item--squere">
+                    <img src="/images/modal/redact.png" alt="cover">
+                  </div>
+                  <div class="modal__redact-item modal__redact-item--circle-big">
+                    <img src="/images/modal/redact.png" alt="cover">
+                  </div>
+                  <div class="modal__redact-item modal__redact-item--circle-small">
+                    <img src="/images/modal/redact.png" alt="cover">
+                  </div>
+                </div>
+                <div class="modal__text">Так ваша фотография будет выглядеть в поисковой выдаче, аватаре и диалоговом окне</div>
+              </div>
+              <div class="modal__redact-main">
+                <div class="modal__redact-buttons">
+                  <button class="modal__redact-btn">
+                    <div class="modal__redact-btn-icon">
+                      <img src="images/modal/profile.svg" alt="cover">
+                    </div>
+                    <div class="modal__redact-btn-text">Заменить фото</div>
+                  </button>
+                  <button class="modal__redact-btn-red">
+                    <div class="modal__redact-btn-icon">
+                      <img src="images/modal/Trash.svg" alt="cover">
+                    </div>
+                  </button>
+                </div>
+                <div class="modal__redact-element">
+                  <div class="zoom__wrap">
+                    <h1 class="zoom__title">Zoom</h1>
+                    <div class="zoom__input-wrap">
+                        <input type="range" class="zoom" min="0" value="0">
+                    </div>
+                </div>
+                </div>
+                <div class="modal__redact-element">
+                  <div class="modal__redact-suptitle">Вращать</div>
+                  <div class="modal__redact-spins">
+                    <div class="modal__redact-spin">
+                      <img src="images/modal/Left.svg" alt="cover">
+                    </div>
+                    <div class="modal__redact-spin">
+                      <img src="images/modal/Right.svg" alt="cover">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__redact-bottom">
+              <div class="modal__redact-buttons">
+                <button class="modal__redact-btn">
+                  <div class="modal__redact-btn-text">Отмена</div>
+                </button>
+                <button class="modal__btn">На главную</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      for (let e of document.querySelectorAll('input[type="range"].zoom')) {
+      e.style.setProperty('--value', e.value);
+      e.style.setProperty('--min', e.min == '' ? '0' : e.min);
+      e.style.setProperty('--max', e.max == '' ? '100' : e.max);
+      e.addEventListener('input', () => e.style.setProperty('--value', e.value));
+      }
+
+      let btns = document.querySelectorAll("*[data-modal]");
+      let btn = document.querySelectorAll(".modal__close-arrow");
+
+      for(let i = 0; i<btns.length; i++) {
+        btns[i].addEventListener('click', function() {
+            let name = btns[i].getAttribute('data-modal');
+            let popup = document.querySelector("[data-modal-window='"+name+"']");
+            let popupBlock = document.querySelectorAll('.modal__filter');
+            let body = document.querySelector('body');
+            popup.style.display = "flex";
+            body.style.overflow = "hidden";
+
+            let close = document.querySelectorAll(".modal__close");
+            let arrowClose = document.querySelectorAll(".arrow__close");
+
+            close.forEach(item => {
+                item.addEventListener('click', event => {
+                    popup.style.display = "none";
+                    body.style.overflow = "auto";
+                });
+            });
+
+            arrowClose.forEach(item => {
+                item.addEventListener('click', event => {
+                    popupBlock.forEach(item => {
+                        item.style.display = "none";
+                    });
+                });
+            });
+        });
+      }
+  </script>
+
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libs/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="./libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
